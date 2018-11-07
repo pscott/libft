@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 11:29:47 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 11:37:30 by pscott           ###   ########.fr       */
+/*   Created: 2018/11/07 11:41:39 by pscott            #+#    #+#             */
+/*   Updated: 2018/11/07 11:43:11 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	while (*s1 && *s2 && n)
+	int i;
+
+	i = 0;
+	while (len - i)
 	{
-		if (*s1 - *s2 != 0)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
-		n++;
+		while (src[i])
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = 0;
 	}
-	return (*s1 - *s2);
+	return (dst);
 }
