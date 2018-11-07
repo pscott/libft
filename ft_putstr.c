@@ -1,40 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 13:09:17 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 14:38:04 by pscott           ###   ########.fr       */
+/*   Created: 2018/11/07 13:27:20 by pscott            #+#    #+#             */
+/*   Updated: 2018/11/07 13:28:42 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+void	ft_putstr(char const *str)
 {
-	int i;
-	int modif;
-	int finalnb;
-
-	i = 0;
-	modif = 1;
-	finalnb = 0;
-	while (str[i] == '\t' || str[i] == '\r' || str[i] == '\v' || str[i] == '\b'
-			|| str[i] == '\f' || str[i] == '\n')
-		i++;
-	if (str[i] == '-')
+	while (*str)
 	{
-		i++;
-		modif = -1;
+		ft_putchar(*str);
+		str++;
 	}
-	if (str[i] == '+' && modif != -1)
-		i++;
-	while (ft_isdigit(str[i]))
-	{
-		finalnb = finalnb * 10 + str[i] - '0';
-		i++;
-	}
-	return (finalnb * modif);
 }

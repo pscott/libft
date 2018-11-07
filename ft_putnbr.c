@@ -1,40 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 13:09:17 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 14:38:04 by pscott           ###   ########.fr       */
+/*   Created: 2018/11/07 13:29:54 by pscott            #+#    #+#             */
+/*   Updated: 2018/11/07 14:34:56 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+void	ft_putnbr(int n)
 {
-	int i;
-	int modif;
-	int finalnb;
-
-	i = 0;
-	modif = 1;
-	finalnb = 0;
-	while (str[i] == '\t' || str[i] == '\r' || str[i] == '\v' || str[i] == '\b'
-			|| str[i] == '\f' || str[i] == '\n')
-		i++;
-	if (str[i] == '-')
+	if (n == -2147483648)
 	{
-		i++;
-		modif = -1;
+		ft_putchar('-');
+		ft_putchar('2');
+		ft_putnbr(147483648);
 	}
-	if (str[i] == '+' && modif != -1)
-		i++;
-	while (ft_isdigit(str[i]))
+	else if (n < 0)
 	{
-		finalnb = finalnb * 10 + str[i] - '0';
-		i++;
+		ft_putchar('-');
+		ft_putnbr(-n);
 	}
-	return (finalnb * modif);
+	else if (n < 10)
+		ft_putchar(n + '0');
+	else
+	{
+		ft_putnbr(n / 10);
+		ft_putchar(n % 10 + '0');
+	}
 }
