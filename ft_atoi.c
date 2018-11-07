@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:09:17 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 14:46:04 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 16:06:46 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		ft_atoi(const char *str)
 {
-	int i;
-	int modif;
-	int finalnb;
+	size_t	i;
+	int		modif;
+	int		finalnb;
 
 	i = 0;
 	modif = 1;

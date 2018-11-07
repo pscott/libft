@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:46:13 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 14:51:49 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 16:09:30 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*r;
-	int		i;
-	int		j;
+	char		*r;
+	size_t		i;
+	size_t		j;
 
 	if (!(r = (char*)malloc(sizeof(*s1) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
 		return (NULL);

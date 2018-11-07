@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 12:42:56 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 13:05:54 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 16:10:50 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
-	int i;
+	size_t	i;
 
 	if (*needle == 0)
 		return (haystack);

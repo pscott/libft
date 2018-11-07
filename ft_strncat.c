@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:57:00 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 11:59:14 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 16:10:00 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while (s1[i])
