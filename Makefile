@@ -6,13 +6,14 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/07 18:26:46 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/07 18:51:09 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 SRC = ft_atoi.c \
 	  ft_bzero.c \
+	  ft_memset.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
 	  ft_isascii.c \
