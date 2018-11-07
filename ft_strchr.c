@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 12:36:02 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 16:07:57 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 18:04:30 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	char *res;
+
+	res = (char *)s;
+	while (*res)
 	{
-		if (*s == c)
-			return (s);
+		if (*res == c)
+			return (res);
 		s++;
 	}
 	return (NULL);

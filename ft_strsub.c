@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 16:25:46 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 18:08:42 by pscott           ###   ########.fr       */
+/*   Created: 2018/11/07 17:16:16 by pscott            #+#    #+#             */
+/*   Updated: 2018/11/07 18:23:58 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strnequ(char const *s1, char const *s2, size_t n)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	while (*s1 == *s2 && *s1 && n)
+	char	*res;
+	size_t	i;
+
+	if (!(res = ft_strnew(len)))
+		return (NULL);
+	i = 0;
+	while (len)
 	{
-		s1++;
-		s2++;
-		n--;
+		res[i] = s[start + i];
+		i++;
+		len--;
 	}
-	if (*s1 == *s2)
-		return (1);
-	return (0);
+	return (res);
 }

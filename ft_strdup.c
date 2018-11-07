@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:44:36 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 11:56:36 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 18:04:56 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ char	*ft_strdup(const char *s1)
 
 	if (!(res = (char *)malloc(sizeof(*res) * (ft_strlen(s1) + 1))))
 		return (NULL);
-	ft_strcpy(res, src);
+	ft_strcpy(res, s1);
 	return (res);
 }

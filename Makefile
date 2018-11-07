@@ -6,21 +6,58 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/07 10:13:28 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/07 18:26:46 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
-OBJ = main.o
+SRC = ft_atoi.c \
+	  ft_bzero.c \
+	  ft_isalnum.c \
+	  ft_isalpha.c \
+	  ft_isascii.c \
+	  ft_isdigit.c \
+	  ft_isprint.c \
+	  ft_putchar.c \
+	  ft_putendl.c \
+	  ft_putnbr.c \
+	  ft_putstr.c \
+	  ft_strcat.c \
+	  ft_strchr.c \
+	  ft_strclear.c \
+	  ft_strcmp.c \
+	  ft_strcpy.c \
+	  ft_strdel.c \
+	  ft_strdup.c \
+	  ft_strequ.c \
+	  ft_strjoin.c \
+	  ft_strlcat.c \
+	  ft_strlen.c \
+	  ft_strncat.c \
+	  ft_strncmp.c \
+	  ft_strncpy.c \
+	  ft_strnequ.c \
+	  ft_strnew.c \
+	  ft_strnstr.c \
+	  ft_strrchr.c \
+	  ft_strstr.c \
+	  ft_strsub.c \
+	  ft_strtrim.c \
+	  ft_tolower.c \
+	  ft_toupper.c
+
+OBJ = $(SRC:.c=.o)
+
 CFLAGS = -Wall -Wextra -Werror
-NAME = libft
+NAME = libft.a
 DEPS = libft.h
 
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) -o $@ $^
+	ar rcs $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 %.o: %.c $(DEPS)
 	$(CC) -o $@ -c $< $(CFLAGS)

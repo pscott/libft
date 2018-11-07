@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:53:58 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 16:05:04 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 17:18:35 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ char				*ft_strtrim(char const *s)
 	if (s[i] == 0)
 		return (NULL);
 	len = trim_len(&s[i]);
-	res = ft_strnew(len + 1);
+	if (!(res = ft_strnew(len + 1)))
+		return (NULL);
 	ft_strncpy(res, &s[i], len + 1);
 	return (res);
 }
