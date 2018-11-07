@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:34:05 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 15:48:49 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 16:23:18 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,8 @@ void	ft_putnbr(int n);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	*ft_strnew(size_t size);
+void	ft_strclr(char *s);
+void	ft_strdel(char **as);
+int		ft_strequ(char const *s1, char const *s2);
+int		ft_strnequ(char *const *s1, char const *s2, size_t n);
 #endif
