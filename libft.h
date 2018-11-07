@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:34:05 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 18:08:39 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/07 18:34:49 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,5 @@ void	ft_strdel(char **as);
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char	**ft_strsplit(char const *s, char c);
 #endif
