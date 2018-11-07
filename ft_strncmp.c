@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 11:34:05 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 11:34:06 by pscott           ###   ########.fr       */
+/*   Created: 2018/11/07 11:29:47 by pscott            #+#    #+#             */
+/*   Updated: 2018/11/07 11:33:47 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <string.h>
-# include <unistd.h>
-# include <stdlib.h>
+#include "libft.h"
 
-void	ft_bzero(void *s, size_t n);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		isalnum(int c);
-int		isascii(int c);
-int		isprint(int c);
-int		toupper(int c);
-int		tolower(int c);
-int		strcmp(const char *s1, const char *s2);
-int		strncmp(const char *s1, const char *s2, size_t n);
-#endif
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	while (*s1 && *s2 && n > 0)
+	{
+		if (*s1 - *s2 != 0)
+			return (*s1 - *s2);
+		s1++;
+		s2++;
+		n++;
+	}
+	return (*s1 - *s2);
+}
