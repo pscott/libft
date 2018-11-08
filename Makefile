@@ -6,7 +6,7 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/08 17:18:40 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/08 17:19:17 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,8 @@ SRC = ft_atoi.c \
 	  ft_strtrim.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
-	  OBJ = $(SRC:.c=.o)
+
+OBJ = $(SRC:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a

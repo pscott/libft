@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:56:25 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 17:08:35 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 17:23:50 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char*))
 			return (NULL);
 		while (s[i])
 		{
-			res[i] = (*f)(j, s[i]);
+			res[i] = (*f)(j, &((char *)s)[i]);
 			i++;
 		}
+		return (res);
 	}
-	return (res);
+	return (NULL);
 }
