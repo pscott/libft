@@ -6,7 +6,7 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/08 11:00:05 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/08 11:33:08 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRC = ft_atoi.c \
 	  ft_isascii.c \
 	  ft_isdigit.c \
 	  ft_isprint.c \
+	  ft_memalloc.c \
 	  ft_memccpy.c \
 	  ft_memchr.c \
 	  ft_memcmp.c \
