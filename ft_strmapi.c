@@ -6,17 +6,20 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:56:25 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 11:59:40 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 17:08:35 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*)(unsigned int, char *))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char*))
 {
 	unsigned int	j;
 	size_t			i;
+	char			*res;
 
+	j = 0;
+	i = 0;
 	if (s && f)
 	{
 		if (!(res = ft_strnew(ft_strlen(s))))

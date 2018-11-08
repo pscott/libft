@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:34:05 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 14:51:05 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 17:16:45 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,9 @@ char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char *));
 char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
+void	ft_putnbr(int n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
