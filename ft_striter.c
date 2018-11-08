@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:38:04 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 11:47:46 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 11:51:29 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_striter(char *s, void (*f)(char *s))
 {
 	size_t	i;
 
-	if (s != NULL && f != NULL)
+	if (s && f)
 	{
 		while (s[i])
 		{

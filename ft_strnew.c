@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 15:25:01 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 15:54:02 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 12:51:25 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnew(size_t size)
 	char	*res;
 	size_t	i;
 
-	if (size <= 0)
+	if (size == 0)
 		return (NULL);
 	if (!(res = (char *)malloc(sizeof(*res) * (size + 1))))
 		return (NULL);
