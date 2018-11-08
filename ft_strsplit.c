@@ -6,12 +6,11 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 12:10:44 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 14:37:27 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 14:49:16 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 static size_t	how_many(char const *s, char c)
 {
