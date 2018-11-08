@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 09:56:59 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 10:28:59 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 11:13:55 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if ((unsigned char*)s[i] == (unsigned char)c)
-			return (s[i]);
+		if (((unsigned char*)s)[i] == (unsigned char)c)
+			return (&((void *)s)[i]);
 	}
 	return (NULL);
 }

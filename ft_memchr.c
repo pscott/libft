@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 10:29:52 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 10:31:46 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 11:08:15 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (((unsigned char *)s)[i] == (unsigned char)c)
-			return (s[i]);
+			return ((void *)&s[i]);
 		i++;
 	}
 	return (NULL);
