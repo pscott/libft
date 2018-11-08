@@ -6,19 +6,25 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/07 18:51:09 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/08 11:00:05 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 SRC = ft_atoi.c \
 	  ft_bzero.c \
-	  ft_memset.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
 	  ft_isascii.c \
 	  ft_isdigit.c \
 	  ft_isprint.c \
+	  ft_memccpy.c \
+	  ft_memchr.c \
+	  ft_memcmp.c \
+	  ft_memcpy.c \
+	  ft_memdel.c \
+	  ft_memmove.c \
+	  ft_memset.c \
 	  ft_putchar.c \
 	  ft_putendl.c \
 	  ft_putnbr.c \
@@ -45,7 +51,7 @@ SRC = ft_atoi.c \
 	  ft_strsub.c \
 	  ft_strtrim.c \
 	  ft_tolower.c \
-	  ft_toupper.c
+	  ft_toupper.c \
 
 OBJ = $(SRC:.c=.o)
 
