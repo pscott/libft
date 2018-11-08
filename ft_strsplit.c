@@ -6,11 +6,12 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 12:10:44 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 14:05:55 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/08 14:36:31 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 static size_t	how_many(char const *s, char c)
 {
@@ -53,30 +54,23 @@ char			**ft_strsplit(char const *s, char c)
 	char	**tab;
 	size_t	i;
 	size_t	j;
-	size_t	h;
 	size_t	k;
 
 	i = 0;
 	j = 0;
-	printf("%zd\n", how_many(s, c));
 	if (!(tab = (char **)malloc(sizeof(*tab) * (how_many(s, c) + 1))))
 		return (NULL);
 	while (s[j])
 	{
 		k = 0;
-		if (!(h = how_long(s, c, &j)))
+		if (!(how_long(s, c, &j)))
 			j++;
-		else if (!(tab[i] = ft_strnew(h)))
+		else if (!(tab[i] = ft_strnew(how_long(s, c, &j))))
 			return (NULL);
 		else
 		{
-			while (k < h)
-			{
-				tab[i][k] = s[j];
-				k++;
-				j++;
-			}
-			tab[i][k] = 0;
+			ft_strncpy(tab[i], &s[j], how_long(s, c, &j));
+			j = j + how_long(s, c, &j);
 			i++;
 		}
 	}
