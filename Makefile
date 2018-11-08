@@ -6,7 +6,7 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/08 17:19:17 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/08 17:29:21 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ SRC = ft_atoi.c \
 	  ft_putstr_fd.c \
 	  ft_strcat.c \
 	  ft_strchr.c \
-	  ft_strclear.c \
+	  ft_strclr.c \
 	  ft_strcmp.c \
 	  ft_strcpy.c \
 	  ft_strdel.c \
