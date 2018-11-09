@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 12:36:02 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 18:04:30 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 13:13:05 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (*res == c)
 			return (res);
-		s++;
+		res++;
 	}
+	if (*res == c)
+		return (res);
 	return (NULL);
 }

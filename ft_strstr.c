@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 12:42:56 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 18:16:01 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 13:26:21 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strstr(const char *haystack, const char *needle)
 		}
 		if (needle[j] == 0)
 			return ((char *)&haystack[i - j]);
-		i++;
+		i = i - j + 1;
 	}
 	return (NULL);
 }
