@@ -58,6 +58,8 @@ char			**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	j = 0;
+    if (!s)
+      return (NULL);
 	if (!(tab = (char **)malloc(sizeof(*tab) * (how_many(s, c) + 1))))
 		return (NULL);
 	while (s[j])
