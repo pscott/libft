@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:34:05 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/09 11:57:00 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 13:54:00 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	ft_memdel(void **ap);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char *));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
 void	ft_putnbr(int n);

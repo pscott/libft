@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:50:48 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 16:47:17 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 14:06:27 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 static void	get_len(int n, int *len)
 {
+	if (n == -2147483648)
+	{
+		*len = 11;
+		return ;
+	}
 	if (n < 0)
 	{
 		*len = *len + 1;
@@ -45,11 +50,14 @@ char		*ft_itoa(int n)
 	int		len;
 
 	len = 0;
-	if (n == -2147483648)
-		return ("-2147483648");
 	get_len(n, &len);
 	if (!(res = ft_strnew(len)))
 		return (NULL);
+	if (n == -2147483648)
+	{
+		res = "-2147483648";
+		return (res);
+	}
 	if (n < 0)
 	{
 		res[0] = '-';
