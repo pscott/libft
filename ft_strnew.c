@@ -6,11 +6,12 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 15:25:01 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 12:51:25 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 11:55:47 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_stdlib.h"
 
 char	*ft_strnew(size_t size)
 {

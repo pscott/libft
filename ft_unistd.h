@@ -1,23 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_unistd.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 11:44:36 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/09 11:58:33 by pscott           ###   ########.fr       */
+/*   Created: 2018/11/09 11:53:41 by pscott            #+#    #+#             */
+/*   Updated: 2018/11/09 11:54:17 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strdup(const char *s1)
-{
-	char *res;
-
-	if (!(res = ft_strnew(ft_strlen(s1))))
-		return (NULL);
-	ft_strcpy(res, s1);
-	return (res);
-}
+#ifndef FT_UNISTD_H
+# define FT_UNISTD_H
+# include <unistd.h>
+#endif

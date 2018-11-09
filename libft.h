@@ -6,15 +6,13 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:34:05 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 17:26:15 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 11:57:00 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
-# include <unistd.h>
-# include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(int c);
@@ -52,7 +50,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memcpy(void	*restrict dst, const void *restrict src, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t len);
+void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memccpy(void *restrict d, const void *restrict s, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
