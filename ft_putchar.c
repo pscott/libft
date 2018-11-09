@@ -6,12 +6,12 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:26:36 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/09 11:53:33 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 12:04:41 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_unistd"
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {

@@ -6,11 +6,12 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:14:58 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 16:18:02 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 12:02:45 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 void	ft_strdel(char **as)
 {

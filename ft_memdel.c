@@ -6,11 +6,12 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 09:56:59 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/08 11:36:11 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/09 12:02:33 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 void	ft_memdel(void **ap)
 {
