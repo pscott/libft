@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:46:13 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/11 13:28:16 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/11 19:03:35 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t		i;
 	size_t		j;
 
-	if (s1)
+	if (s1 && s2)
 	{
 		if (!(r = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
 			return (NULL);

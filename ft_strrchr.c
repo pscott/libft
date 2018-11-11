@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 12:39:50 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/09 13:21:09 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/11 18:34:30 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	size_t i;
 
 	i = ft_strlen(s);
-	while (i > 0)
+	while (i + 1 > 0)
 	{
 		if (s[i] == c)
 			return ((char *)&s[i]);
