@@ -6,7 +6,7 @@
 #    By: pscott <pscott@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 15:57:44 by pscott            #+#    #+#              #
-#    Updated: 2018/11/08 17:29:21 by pscott           ###   ########.fr        #
+#    Updated: 2018/11/11 14:01:50 by pscott           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,8 @@ SRC = ft_atoi.c \
 	  ft_isprint.c \
 	  ft_itoa.c \
 	  ft_lstadd.c \
+	  ft_lstdel.c \
+	  ft_lstdelone.c \
 	  ft_lstnew.c \
 	  ft_memalloc.c \
 	  ft_memccpy.c \
