@@ -6,42 +6,39 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:50:48 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/11 13:29:33 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/11 16:05:53 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	get_len(int n, int *len)
+static int	get_len(int n)
 {
-	if (n == -2147483648)
-	{
-		*len = 11;
-		return ;
-	}
+	int len;
+
+	len = 0;
 	if (n < 0)
 	{
-		*len = *len + 1;
+		len++;
 		n = -n;
 	}
-	if (n / 10 < 1)
+	while (n > 9)
 	{
-		*len = *len + 1;
-		return ;
+		n = n / 10;
+		len++;
 	}
-	get_len(n / 10, len);
-	*len = *len + 1;
+	return (len + 1);
 }
 
 static void	fill_itoa(int n, char *src, int len)
 {
-	if (n / 10 < 1)
+	while (n > 9)
 	{
-		src[len - 1] = n + '0';
-		return ;
+		src[len - 1] = n % 10 + '0';
+		len--;
+		n = n / 10;
 	}
-	fill_itoa(n / 10, src, len - 1);
-	src[len - 1] = n % 10 + '0';
+	src[0] = n + '0';
 }
 
 static char	*min_int(char *res)
@@ -64,8 +61,7 @@ char		*ft_itoa(int n)
 	char	*res;
 	int		len;
 
-	len = 0;
-	get_len(n, &len);
+	len = get_len(n);
 	if (!(res = ft_strnew(len)))
 		return (NULL);
 	if (n == -2147483648)
