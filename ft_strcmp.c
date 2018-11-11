@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:26:57 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/09 13:28:01 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/11 13:28:04 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int		ft_strcmp(const char *s1, const char *s2)
 
 	us1 = (unsigned char *)s1;
 	us2 = (unsigned char *)s2;
-
 	while (*us1 && *us2)
 	{
 		if (*us1 - *us2 != 0)

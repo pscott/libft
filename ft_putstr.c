@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:27:20 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 13:28:42 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/11 13:29:03 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_putstr(char const *str)
 {
-        if (str)
-        {
-                while (*str)
-                {
-                        ft_putchar(*str);
-                        str++;
-                }
-        }
+	if (str)
+	{
+		while (*str)
+		{
+			ft_putchar(*str);
+			str++;
+		}
+	}
 }

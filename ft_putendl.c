@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:28:12 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/07 13:29:35 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/11 13:27:39 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	ft_putendl(char const *str)
 {
-        if (str)
-        {
-                while (*str)
-                {
-                        ft_putchar(*str);
-                        str++;
-                }
-        }
-        ft_putchar('\n');
+	if (str)
+	{
+		while (*str)
+		{
+			ft_putchar(*str);
+			str++;
+		}
+	}
+	ft_putchar('\n');
 }
