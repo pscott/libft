@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:18:24 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/11 13:28:11 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/21 12:54:01 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,7 @@ int	ft_strequ(char const *s1, char const *s2)
 		if (*s1 == *s2)
 			return (1);
 	}
+	if (!s1 && !s2)
+		return (1);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:25:46 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/11 18:58:22 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/21 12:54:46 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 		if (n == 0 || (*s1 == *s2 && !(*s1)))
 			return (1);
 	}
+	if (!s1 && !s2)
+		return (1);
 	return (0);
 }

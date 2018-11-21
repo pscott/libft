@@ -6,13 +6,24 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:46:13 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/11 19:03:35 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/21 13:08:41 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+static char	*ft_joinhelper(char const *s1, char const *s2)
+{
+	if (!s1 && !s2)
+		return (NULL);
+	if (!s1)
+		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
+	return (NULL);
+}
+
+char		*ft_strjoin(char const *s1, char const *s2)
 {
 	char		*r;
 	size_t		i;
@@ -37,5 +48,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		}
 		return (r);
 	}
-	return (NULL);
+	return (ft_joinhelper(s1, s2));
 }

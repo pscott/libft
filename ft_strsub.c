@@ -6,7 +6,7 @@
 /*   By: pscott <pscott@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:16:16 by pscott            #+#    #+#             */
-/*   Updated: 2018/11/11 13:28:42 by pscott           ###   ########.fr       */
+/*   Updated: 2018/11/21 12:55:42 by pscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,5 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		}
 		return (res);
 	}
-	res = ft_strnew(0);
-	return (res);
+	return (NULL);
 }
